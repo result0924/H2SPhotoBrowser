@@ -1,0 +1,130 @@
+reporter: "xcode" # reporter type (xcode, json, csv, checkstyle, junit)
+
+included: # paths to include during linting. `--path` is ignored if present.
+  - H2SPhotoBrowser
+
+excluded: # paths to ignore during linting. Takes precedence over `included`.
+  - Pods
+
+# If you need help with rules run $ swiftlint 
+
+opt_in_rules:
+  - closure_end_indentation
+  - closure_spacing
+  - comments_space
+  - explicit_init
+  - explicit_failure_calls
+  - extension_access_modifier
+  - fatal_error_message
+  - first_where
+  - force_cast
+  - force_unwrapping
+  - implicitly_unwrapped_optional
+  - missing_docs
+  - multiline_parameters
+  - multiple_empty_lines
+  - nesting
+  - number_separator
+  - operator_usage_whitespace
+  - overridden_super_call
+  - private_outlet
+  - prohibited_super_call
+  - protocol_property_accessors_order
+  - redundant_nil_coalescing
+  - sorted_imports
+  - syntactic_sugar
+  - vertical_parameter_alignment_on_call
+  - vertical_whitespace
+  - return_arrow_whitespace
+  - empty_count
+
+disabled_rules: # rule identifiers to exclude from running
+  # - force_try
+  # - class_delegate_protocol
+  # - function_parameter_count
+  # - function_body_length
+  # - todo
+  # - discarded_notification_center_observer
+  # - conditional_returns_on_newline
+
+cyclomatic_complexity:
+  ignores_case_statements: true
+  warning: 20
+
+file_length:
+  warning: 2000
+  error: 2500
+
+line_length: 
+  warning: 250 
+  error: 500
+  ignores_comments: true
+  ignores_urls: true
+
+function_body_length:
+  warning: 150
+  error: 200
+
+nesting:
+  type_level:
+    warning: 3
+    error: 6
+  statement_level:
+    warning: 5
+    error: 10
+
+identifier_name:
+  allowed_symbols: "_"
+  min_length: 2
+  max_length: 
+    warning: 90
+    error: 1000
+  excluded:
+    - id
+
+implicitly_unwrapped_optional:
+  mode: all_except_iboutlets
+
+large_tuple:
+  warning: 4
+  error: 5
+
+type_body_length:
+  warning: 2000
+  error: 2000
+
+trailing_comma:
+  mandatory_comma: true
+
+number_separator:
+  minimum_length: 8
+
+private_outlet:
+  allow_private_set: true
+
+colon: 
+  severity: error
+comma: error
+empty_count: error
+legacy_constant: error
+legacy_constructor: error
+opening_brace: error
+trailing_newline: error
+trailing_semicolon: error
+
+custom_rules:
+  comments_space: # From https://github.com/brandenr/swiftlintconfig
+    name: "Space After Comment"
+    regex: '(^ *//\w+)'
+    message: "There should be a space after //"
+    severity: warning
+  explicit_failure_calls:
+      name: “Avoid asserting ‘false’”
+      regex: ‘((assert|precondition)\(false)’
+      message: “Use assertionFailure() or preconditionFailure() instead.”
+      severity: warning
+  multiple_empty_lines:
+     name: "Multiple Empty Lines"
+     regex: '((?:\s*\n){3,})'
+     message: "There are too many line breaks"
+     severity: error
