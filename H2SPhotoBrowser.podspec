@@ -8,5 +8,6 @@ Pod::Spec.new do |s|
     s.source        =  { :git => "git@github.com:result0924/H2SPhotoBrowser.git" }
     s.platform      =  :ios, '14.0'
     s.source_files  =  'H2SPhotoBrowser/*'
+    s.dependency 'SDWebImage', '~> 3.7.1'
     s.requires_arc  =  true
     end

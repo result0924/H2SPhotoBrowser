@@ -29,13 +29,9 @@ open class H2SPhotoBrowserView: UIView {
     
     open lazy var cellDidAppear: (H2SPhotoBrowserCell, Int) -> Void = { _, _ in }
     
-    open lazy var numberOfItems: () -> Int = { 0 }
-    
     open lazy var cellClassAtIndex: (_ index: Int) -> H2SPhotoBrowserCell.Type = { _ in
         H2SPhotoBrowserImageCell.self
     }
-    
-    open lazy var reloadCellAtIndex: (H2SPhotoBrowser.ReloadCellContext) -> Void = { _ in }
     
     open lazy var didChangedPageIndex: (_ index: Int) -> Void = { _ in }
     
@@ -50,7 +46,11 @@ open class H2SPhotoBrowserView: UIView {
         return sv
     }()
     
+    lazy var reloadCellAtIndex: (H2SPhotoBrowser.ReloadCellContext) -> Void = { _ in }
+    
     var isRotating = false
+    
+    private var photos: [H2SPhoto] = []
     
     private var isPageIndexChanged = true
     
@@ -58,12 +58,9 @@ open class H2SPhotoBrowserView: UIView {
     
     private var reusableCells = [String: [H2SPhotoBrowserCell]]()
     
-    public convenience init() {
-        self.init(frame: .zero)
-    }
-    
-    public override init(frame: CGRect) {
-        super.init(frame: frame)
+    public init(photos: [H2SPhoto]) {
+        self.photos = photos
+        super.init(frame: .zero)
         setup()
     }
     
@@ -88,7 +85,7 @@ open class H2SPhotoBrowserView: UIView {
     }
     
     private func resetContentSize() {
-        let maxIndex = CGFloat(numberOfItems())
+        let maxIndex = CGFloat(photos.count)
         if scrollDirection == .horizontal {
             scrollView.contentSize = CGSize(width: scrollView.frame.width * maxIndex,
                                             height: scrollView.frame.height)
@@ -100,7 +97,7 @@ open class H2SPhotoBrowserView: UIView {
     
     private func reloadData() {
         pageIndex = max(0, pageIndex)
-        pageIndex = min(pageIndex, numberOfItems())
+        pageIndex = min(pageIndex, photos.count)
         resetContentSize()
         resetCells()
         layoutCells()
@@ -174,7 +171,7 @@ open class H2SPhotoBrowserView: UIView {
         }
         removeFromVisibles.forEach { visibleCells.removeValue(forKey: $0) }
         
-        let itemsTotalCount = numberOfItems()
+        let itemsTotalCount = photos.count
         for index in (pageIndex - 1)...(pageIndex + 1) {
             if index < 0 || index > itemsTotalCount - 1 {
                 continue

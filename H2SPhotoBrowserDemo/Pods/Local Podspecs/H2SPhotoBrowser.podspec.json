@@ -16,5 +16,10 @@
     "ios": "14.0"
   },
   "source_files": "H2SPhotoBrowser/*",
+  "dependencies": {
+    "SDWebImage": [
+      "~> 3.7.1"
+    ]
+  },
   "requires_arc": true
 }

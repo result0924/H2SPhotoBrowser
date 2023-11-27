@@ -1,2 +1,3 @@
 ${PODS_ROOT}/Target Support Files/Pods-H2SPhotoBrowserDemo/Pods-H2SPhotoBrowserDemo-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/H2SPhotoBrowser/H2SPhotoBrowser.framework
+${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework

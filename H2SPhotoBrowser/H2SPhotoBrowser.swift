@@ -13,7 +13,6 @@ open class H2SPhotoBrowser: UIViewController {
         case vertical
     }
     
-    public typealias ReloadCellContext = (cell: H2SPhotoBrowserCell, index: Int, currentIndex: Int)
     public typealias PresentEmbedClosure = (H2SPhotoBrowser) -> UINavigationController
     
     open weak var previousNavigationControllerDelegate: UINavigationControllerDelegate?
@@ -61,11 +60,6 @@ open class H2SPhotoBrowser: UIViewController {
     
     open var isPreviousNavigationBarHidden: Bool?
     
-    open var reloadCellAtIndex: (ReloadCellContext) -> Void {
-        set { browserView.reloadCellAtIndex = newValue }
-        get { return browserView.reloadCellAtIndex }
-    }
-    
     open var scrollDirection: H2SPhotoBrowser.ScrollDirection {
         set { browserView.scrollDirection = newValue }
         get { return browserView.scrollDirection }
@@ -79,11 +73,6 @@ open class H2SPhotoBrowser: UIViewController {
     open var pageIndex: Int {
         set { browserView.pageIndex = newValue }
         get { return browserView.pageIndex }
-    }
-    
-    open var numberOfItems: () -> Int {
-        set { browserView.numberOfItems = newValue }
-        get { return browserView.numberOfItems }
     }
     
     open var cellClassAtIndex: (_ index: Int) -> H2SPhotoBrowserCell.Type {
@@ -106,7 +95,7 @@ open class H2SPhotoBrowser: UIViewController {
         get { return browserView.cellDidAppear }
     }
     
-    open lazy var browserView = H2SPhotoBrowserView()
+    open lazy var browserView = H2SPhotoBrowserView(photos: photos)
     
     open lazy var didChangedPageIndex: (_ index: Int) -> Void = { _ in }
     
@@ -137,6 +126,15 @@ open class H2SPhotoBrowser: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     
+    typealias ReloadCellContext = (cell: H2SPhotoBrowserCell, index: Int, currentIndex: Int)
+    
+    private var photos: [H2SPhoto] = []
+    
+    private var reloadCellAtIndex: (ReloadCellContext) -> Void {
+        set { browserView.reloadCellAtIndex = newValue }
+        get { return browserView.reloadCellAtIndex }
+    }
+    
     private lazy var isStatusBarHidden = self.isPreviousStatusBarHidden
     
     private lazy var isPreviousStatusBarHidden: Bool = {
@@ -147,8 +145,15 @@ open class H2SPhotoBrowser: UIViewController {
         return previousVC?.prefersStatusBarHidden ?? false
     }()
     
-    public init() {
+    public init(photos: [H2SPhoto], currentIndex: Int) {
+        self.photos = photos
         super.init(nibName: nil, bundle: nil)
+        
+        reloadCellAtIndex = { context in
+            let browserCell = context.cell as? H2SPhotoBrowserImageCell
+            let indexPath = IndexPath(item: context.index, section: 0)
+            browserCell?.imageView.image = UIImage(named: "local_\(indexPath.row)")
+        }
     }
     
     required public init?(coder: NSCoder) {
@@ -190,7 +195,7 @@ open class H2SPhotoBrowser: UIViewController {
         super.viewWillLayoutSubviews()
         maskView.frame = view.bounds
         browserView.frame = view.bounds
-        pageIndicator?.reloadData(numberOfItems: numberOfItems(), pageIndex: pageIndex)
+        pageIndicator?.reloadData(pageIndex: pageIndex)
     }
     
     open override func viewWillAppear(_ animated: Bool) {

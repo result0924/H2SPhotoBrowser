@@ -11,7 +11,7 @@ public protocol H2SPhotoBrowserPageIndicator: UIView {
     
     func setup(with browser: H2SPhotoBrowser)
     
-    func reloadData(numberOfItems: Int, pageIndex: Int)
+    func reloadData(pageIndex: Int)
     
     func didChanged(pageIndex: Int)
 }

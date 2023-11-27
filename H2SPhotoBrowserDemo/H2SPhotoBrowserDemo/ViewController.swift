@@ -34,17 +34,9 @@ extension ViewController: UITableViewDataSource {
 
 extension ViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let browser = H2SPhotoBrowser()
-        browser.numberOfItems = {
-            return 6
-        }
-        browser.reloadCellAtIndex = { context in
-            let browserCell = context.cell as? H2SPhotoBrowserImageCell
-            let indexPath = IndexPath(item: context.index, section: indexPath.section)
-            browserCell?.imageView.image = UIImage(named: "local_\(indexPath.row)")
-        }
+        let photos = [H2SPhoto.photo(with: UIImage(named: "local_0")), H2SPhoto.photo(with: UIImage(named: "local_1")), H2SPhoto.photo(with: UIImage(named: "local_2"))]
+        let browser = H2SPhotoBrowser(photos: photos, currentIndex: indexPath.row)
         browser.pageIndex = indexPath.item
-
         browser.show()
     }
 }

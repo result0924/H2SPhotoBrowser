@@ -1,16 +1,26 @@
 PODS:
-  - H2SPhotoBrowser (1.0.0)
+  - H2SPhotoBrowser (1.0.0):
+    - SDWebImage (~> 3.7.1)
+  - SDWebImage (3.7.6):
+    - SDWebImage/Core (= 3.7.6)
+  - SDWebImage/Core (3.7.6)
 
 DEPENDENCIES:
   - H2SPhotoBrowser (from `../`)
+  - SDWebImage (~> 3.7.1)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - SDWebImage
 
 EXTERNAL SOURCES:
   H2SPhotoBrowser:
     :path: "../"
 
 SPEC CHECKSUMS:
-  H2SPhotoBrowser: cc787644d3608a3db7a4b059f99285d8d502f7dc
+  H2SPhotoBrowser: 47397e35eee3696a6b8f34853d0a996b6fee05e8
+  SDWebImage: c325cf02c30337336b95beff20a13df489ec0ec9
 
-PODFILE CHECKSUM: de274b801ff0699c8bddc0727b210c8d4a6e7c7d
+PODFILE CHECKSUM: 25c11143af46d0850187af8c73ff3f5b72a9877e
 
 COCOAPODS: 1.11.3
