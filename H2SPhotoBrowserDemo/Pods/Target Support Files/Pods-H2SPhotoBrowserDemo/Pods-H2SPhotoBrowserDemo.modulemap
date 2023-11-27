@@ -1,0 +1,6 @@
+framework module Pods_H2SPhotoBrowserDemo {
+  umbrella header "Pods-H2SPhotoBrowserDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}

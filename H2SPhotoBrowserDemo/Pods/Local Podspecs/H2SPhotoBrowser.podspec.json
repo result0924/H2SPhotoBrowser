@@ -1,0 +1,20 @@
+{
+  "name": "H2SPhotoBrowser",
+  "summary": "H2 photo browser",
+  "version": "1.0.0",
+  "homepage": "https://github.com/result0924/H2SPhotoBrowser",
+  "license": {
+    "type": "MIT"
+  },
+  "authors": {
+    "H2": "service@health2sync.com"
+  },
+  "source": {
+    "git": "git@github.com:result0924/H2SPhotoBrowser.git"
+  },
+  "platforms": {
+    "ios": "14.0"
+  },
+  "source_files": "H2SPhotoBrowser/*",
+  "requires_arc": true
+}

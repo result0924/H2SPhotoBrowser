@@ -1,0 +1,678 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4391C22C433304780701D9CC /* Pods_H2SPhotoBrowserDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 515FBC40F663D8F18C0D6218 /* Pods_H2SPhotoBrowserDemo.framework */; };
+		6CED3AE62B144B75002C2CFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CED3AE52B144B75002C2CFE /* AppDelegate.swift */; };
+		6CED3AE82B144B75002C2CFE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CED3AE72B144B75002C2CFE /* SceneDelegate.swift */; };
+		6CED3AEA2B144B75002C2CFE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CED3AE92B144B75002C2CFE /* ViewController.swift */; };
+		6CED3AED2B144B75002C2CFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CED3AEB2B144B75002C2CFE /* Main.storyboard */; };
+		6CED3AEF2B144B76002C2CFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CED3AEE2B144B76002C2CFE /* Assets.xcassets */; };
+		6CED3AF22B144B76002C2CFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CED3AF02B144B76002C2CFE /* LaunchScreen.storyboard */; };
+		6CED3AFD2B144B76002C2CFE /* H2SPhotoBrowserDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CED3AFC2B144B76002C2CFE /* H2SPhotoBrowserDemoTests.swift */; };
+		6CED3B072B144B76002C2CFE /* H2SPhotoBrowserDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CED3B062B144B76002C2CFE /* H2SPhotoBrowserDemoUITests.swift */; };
+		6CED3B092B144B76002C2CFE /* H2SPhotoBrowserDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CED3B082B144B76002C2CFE /* H2SPhotoBrowserDemoUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6CED3AF92B144B76002C2CFE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6CED3ADA2B144B75002C2CFE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6CED3AE12B144B75002C2CFE;
+			remoteInfo = H2SPhotoBrowserDemo;
+		};
+		6CED3B032B144B76002C2CFE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6CED3ADA2B144B75002C2CFE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6CED3AE12B144B75002C2CFE;
+			remoteInfo = H2SPhotoBrowserDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		515FBC40F663D8F18C0D6218 /* Pods_H2SPhotoBrowserDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_H2SPhotoBrowserDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CED3AE22B144B75002C2CFE /* H2SPhotoBrowserDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = H2SPhotoBrowserDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CED3AE52B144B75002C2CFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6CED3AE72B144B75002C2CFE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		6CED3AE92B144B75002C2CFE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6CED3AEC2B144B75002C2CFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6CED3AEE2B144B76002C2CFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6CED3AF12B144B76002C2CFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6CED3AF32B144B76002C2CFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CED3AF82B144B76002C2CFE /* H2SPhotoBrowserDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = H2SPhotoBrowserDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CED3AFC2B144B76002C2CFE /* H2SPhotoBrowserDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = H2SPhotoBrowserDemoTests.swift; sourceTree = "<group>"; };
+		6CED3B022B144B76002C2CFE /* H2SPhotoBrowserDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = H2SPhotoBrowserDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CED3B062B144B76002C2CFE /* H2SPhotoBrowserDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = H2SPhotoBrowserDemoUITests.swift; sourceTree = "<group>"; };
+		6CED3B082B144B76002C2CFE /* H2SPhotoBrowserDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = H2SPhotoBrowserDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		80C8D4E266BFBC1001863334 /* Pods-H2SPhotoBrowserDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-H2SPhotoBrowserDemo.release.xcconfig"; path = "Target Support Files/Pods-H2SPhotoBrowserDemo/Pods-H2SPhotoBrowserDemo.release.xcconfig"; sourceTree = "<group>"; };
+		FC73FC8D898E4441648F2A81 /* Pods-H2SPhotoBrowserDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-H2SPhotoBrowserDemo.debug.xcconfig"; path = "Target Support Files/Pods-H2SPhotoBrowserDemo/Pods-H2SPhotoBrowserDemo.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6CED3ADF2B144B75002C2CFE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4391C22C433304780701D9CC /* Pods_H2SPhotoBrowserDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CED3AF52B144B76002C2CFE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CED3AFF2B144B76002C2CFE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6CED3AD92B144B75002C2CFE = {
+			isa = PBXGroup;
+			children = (
+				6CED3AE42B144B75002C2CFE /* H2SPhotoBrowserDemo */,
+				6CED3AFB2B144B76002C2CFE /* H2SPhotoBrowserDemoTests */,
+				6CED3B052B144B76002C2CFE /* H2SPhotoBrowserDemoUITests */,
+				6CED3AE32B144B75002C2CFE /* Products */,
+				EDE32A316364BAB96111473F /* Pods */,
+				D0C5911227DDA57B8641476A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6CED3AE32B144B75002C2CFE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6CED3AE22B144B75002C2CFE /* H2SPhotoBrowserDemo.app */,
+				6CED3AF82B144B76002C2CFE /* H2SPhotoBrowserDemoTests.xctest */,
+				6CED3B022B144B76002C2CFE /* H2SPhotoBrowserDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6CED3AE42B144B75002C2CFE /* H2SPhotoBrowserDemo */ = {
+			isa = PBXGroup;
+			children = (
+				6CED3AE52B144B75002C2CFE /* AppDelegate.swift */,
+				6CED3AE72B144B75002C2CFE /* SceneDelegate.swift */,
+				6CED3AE92B144B75002C2CFE /* ViewController.swift */,
+				6CED3AEB2B144B75002C2CFE /* Main.storyboard */,
+				6CED3AEE2B144B76002C2CFE /* Assets.xcassets */,
+				6CED3AF02B144B76002C2CFE /* LaunchScreen.storyboard */,
+				6CED3AF32B144B76002C2CFE /* Info.plist */,
+			);
+			path = H2SPhotoBrowserDemo;
+			sourceTree = "<group>";
+		};
+		6CED3AFB2B144B76002C2CFE /* H2SPhotoBrowserDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				6CED3AFC2B144B76002C2CFE /* H2SPhotoBrowserDemoTests.swift */,
+			);
+			path = H2SPhotoBrowserDemoTests;
+			sourceTree = "<group>";
+		};
+		6CED3B052B144B76002C2CFE /* H2SPhotoBrowserDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6CED3B062B144B76002C2CFE /* H2SPhotoBrowserDemoUITests.swift */,
+				6CED3B082B144B76002C2CFE /* H2SPhotoBrowserDemoUITestsLaunchTests.swift */,
+			);
+			path = H2SPhotoBrowserDemoUITests;
+			sourceTree = "<group>";
+		};
+		D0C5911227DDA57B8641476A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				515FBC40F663D8F18C0D6218 /* Pods_H2SPhotoBrowserDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EDE32A316364BAB96111473F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FC73FC8D898E4441648F2A81 /* Pods-H2SPhotoBrowserDemo.debug.xcconfig */,
+				80C8D4E266BFBC1001863334 /* Pods-H2SPhotoBrowserDemo.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6CED3AE12B144B75002C2CFE /* H2SPhotoBrowserDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CED3B0C2B144B76002C2CFE /* Build configuration list for PBXNativeTarget "H2SPhotoBrowserDemo" */;
+			buildPhases = (
+				E2AB24785C974425069089D4 /* [CP] Check Pods Manifest.lock */,
+				6CED3ADE2B144B75002C2CFE /* Sources */,
+				6CED3ADF2B144B75002C2CFE /* Frameworks */,
+				6CED3AE02B144B75002C2CFE /* Resources */,
+				6F2B643EB4D61990CF18CF31 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = H2SPhotoBrowserDemo;
+			productName = H2SPhotoBrowserDemo;
+			productReference = 6CED3AE22B144B75002C2CFE /* H2SPhotoBrowserDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6CED3AF72B144B76002C2CFE /* H2SPhotoBrowserDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CED3B0F2B144B76002C2CFE /* Build configuration list for PBXNativeTarget "H2SPhotoBrowserDemoTests" */;
+			buildPhases = (
+				6CED3AF42B144B76002C2CFE /* Sources */,
+				6CED3AF52B144B76002C2CFE /* Frameworks */,
+				6CED3AF62B144B76002C2CFE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6CED3AFA2B144B76002C2CFE /* PBXTargetDependency */,
+			);
+			name = H2SPhotoBrowserDemoTests;
+			productName = H2SPhotoBrowserDemoTests;
+			productReference = 6CED3AF82B144B76002C2CFE /* H2SPhotoBrowserDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6CED3B012B144B76002C2CFE /* H2SPhotoBrowserDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CED3B122B144B76002C2CFE /* Build configuration list for PBXNativeTarget "H2SPhotoBrowserDemoUITests" */;
+			buildPhases = (
+				6CED3AFE2B144B76002C2CFE /* Sources */,
+				6CED3AFF2B144B76002C2CFE /* Frameworks */,
+				6CED3B002B144B76002C2CFE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6CED3B042B144B76002C2CFE /* PBXTargetDependency */,
+			);
+			name = H2SPhotoBrowserDemoUITests;
+			productName = H2SPhotoBrowserDemoUITests;
+			productReference = 6CED3B022B144B76002C2CFE /* H2SPhotoBrowserDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6CED3ADA2B144B75002C2CFE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					6CED3AE12B144B75002C2CFE = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					6CED3AF72B144B76002C2CFE = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 6CED3AE12B144B75002C2CFE;
+					};
+					6CED3B012B144B76002C2CFE = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 6CED3AE12B144B75002C2CFE;
+					};
+				};
+			};
+			buildConfigurationList = 6CED3ADD2B144B75002C2CFE /* Build configuration list for PBXProject "H2SPhotoBrowserDemo" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6CED3AD92B144B75002C2CFE;
+			productRefGroup = 6CED3AE32B144B75002C2CFE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6CED3AE12B144B75002C2CFE /* H2SPhotoBrowserDemo */,
+				6CED3AF72B144B76002C2CFE /* H2SPhotoBrowserDemoTests */,
+				6CED3B012B144B76002C2CFE /* H2SPhotoBrowserDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6CED3AE02B144B75002C2CFE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CED3AF22B144B76002C2CFE /* LaunchScreen.storyboard in Resources */,
+				6CED3AEF2B144B76002C2CFE /* Assets.xcassets in Resources */,
+				6CED3AED2B144B75002C2CFE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CED3AF62B144B76002C2CFE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CED3B002B144B76002C2CFE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6F2B643EB4D61990CF18CF31 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-H2SPhotoBrowserDemo/Pods-H2SPhotoBrowserDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-H2SPhotoBrowserDemo/Pods-H2SPhotoBrowserDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-H2SPhotoBrowserDemo/Pods-H2SPhotoBrowserDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E2AB24785C974425069089D4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-H2SPhotoBrowserDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6CED3ADE2B144B75002C2CFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CED3AEA2B144B75002C2CFE /* ViewController.swift in Sources */,
+				6CED3AE62B144B75002C2CFE /* AppDelegate.swift in Sources */,
+				6CED3AE82B144B75002C2CFE /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CED3AF42B144B76002C2CFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CED3AFD2B144B76002C2CFE /* H2SPhotoBrowserDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CED3AFE2B144B76002C2CFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CED3B072B144B76002C2CFE /* H2SPhotoBrowserDemoUITests.swift in Sources */,
+				6CED3B092B144B76002C2CFE /* H2SPhotoBrowserDemoUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6CED3AFA2B144B76002C2CFE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6CED3AE12B144B75002C2CFE /* H2SPhotoBrowserDemo */;
+			targetProxy = 6CED3AF92B144B76002C2CFE /* PBXContainerItemProxy */;
+		};
+		6CED3B042B144B76002C2CFE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6CED3AE12B144B75002C2CFE /* H2SPhotoBrowserDemo */;
+			targetProxy = 6CED3B032B144B76002C2CFE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6CED3AEB2B144B75002C2CFE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6CED3AEC2B144B75002C2CFE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6CED3AF02B144B76002C2CFE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6CED3AF12B144B76002C2CFE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6CED3B0A2B144B76002C2CFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6CED3B0B2B144B76002C2CFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6CED3B0D2B144B76002C2CFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC73FC8D898E4441648F2A81 /* Pods-H2SPhotoBrowserDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9TNVAWA2VV;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = H2SPhotoBrowserDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.h2sync.H2SPhotoBrowserDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6CED3B0E2B144B76002C2CFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80C8D4E266BFBC1001863334 /* Pods-H2SPhotoBrowserDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9TNVAWA2VV;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = H2SPhotoBrowserDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.h2sync.H2SPhotoBrowserDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6CED3B102B144B76002C2CFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9TNVAWA2VV;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.h2sync.H2SPhotoBrowserDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/H2SPhotoBrowserDemo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/H2SPhotoBrowserDemo";
+			};
+			name = Debug;
+		};
+		6CED3B112B144B76002C2CFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9TNVAWA2VV;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.h2sync.H2SPhotoBrowserDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/H2SPhotoBrowserDemo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/H2SPhotoBrowserDemo";
+			};
+			name = Release;
+		};
+		6CED3B132B144B76002C2CFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9TNVAWA2VV;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.h2sync.H2SPhotoBrowserDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = H2SPhotoBrowserDemo;
+			};
+			name = Debug;
+		};
+		6CED3B142B144B76002C2CFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9TNVAWA2VV;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.h2sync.H2SPhotoBrowserDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = H2SPhotoBrowserDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6CED3ADD2B144B75002C2CFE /* Build configuration list for PBXProject "H2SPhotoBrowserDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CED3B0A2B144B76002C2CFE /* Debug */,
+				6CED3B0B2B144B76002C2CFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6CED3B0C2B144B76002C2CFE /* Build configuration list for PBXNativeTarget "H2SPhotoBrowserDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CED3B0D2B144B76002C2CFE /* Debug */,
+				6CED3B0E2B144B76002C2CFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6CED3B0F2B144B76002C2CFE /* Build configuration list for PBXNativeTarget "H2SPhotoBrowserDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CED3B102B144B76002C2CFE /* Debug */,
+				6CED3B112B144B76002C2CFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6CED3B122B144B76002C2CFE /* Build configuration list for PBXNativeTarget "H2SPhotoBrowserDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CED3B132B144B76002C2CFE /* Debug */,
+				6CED3B142B144B76002C2CFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6CED3ADA2B144B75002C2CFE /* Project object */;
+}

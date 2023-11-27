@@ -1,0 +1,16 @@
+PODS:
+  - H2SPhotoBrowser (1.0.0)
+
+DEPENDENCIES:
+  - H2SPhotoBrowser (from `../`)
+
+EXTERNAL SOURCES:
+  H2SPhotoBrowser:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  H2SPhotoBrowser: cc787644d3608a3db7a4b059f99285d8d502f7dc
+
+PODFILE CHECKSUM: de274b801ff0699c8bddc0727b210c8d4a6e7c7d
+
+COCOAPODS: 1.11.3

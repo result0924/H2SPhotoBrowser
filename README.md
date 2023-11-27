@@ -1,2 +1,4 @@
 # H2SPhotoBrowser
-A photo browser
+
+This Photo Browser is implemented with reference to [JXPhotoBrowser](https://github.com/JiongXing/PhotoBrowser).
+

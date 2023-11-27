@@ -1,0 +1,6 @@
+framework module H2SPhotoBrowser {
+  umbrella header "H2SPhotoBrowser-umbrella.h"
+
+  export *
+  module * { export * }
+}
