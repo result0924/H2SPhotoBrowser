@@ -38,6 +38,14 @@ extension ViewController: UITableViewDelegate {
         browser.numberOfItems = {
             return 6
         }
+        browser.reloadCellAtIndex = { context in
+            let browserCell = context.cell as? H2SPhotoBrowserImageCell
+            let indexPath = IndexPath(item: context.index, section: indexPath.section)
+            browserCell?.imageView.image = UIImage(named: "local_\(indexPath.row)")
+        }
+        browser.pageIndex = indexPath.item
+
+        browser.show()
     }
 }
 
